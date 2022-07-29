@@ -1,0 +1,11 @@
+query rateLimit {
+  viewer {
+    login
+  }
+  rateLimit {
+    limit
+    cost
+    remaining
+    resetAt
+  }
+}

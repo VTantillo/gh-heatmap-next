@@ -1,11 +1,11 @@
-# My Next.js Template
+# GitHub Contribution HeatMap
 
-Template repo for how I like to configure Next.js applications and ready to just start building.
-
-There is a branch called `with-twin` that has `twin.macro` already installed and configured. However, it's worth noting that the most recent version of twin that has the latest and greatest from Tailwind is in RC, so you may need to use NVM to use the latest Node 16 LTS.
+Pulls the contribution calendar from the GraphQL API.
 
 ## To do
 
-- [ ] Add explanation of folder structure
-- [ ] Have a branch that include storybook configured
-- [ ] Maybe a branch that includes a graphql configuration?
+- [ ] Change color scheme
+- [ ] View contribution day details on hover
+- [ ] Add month and day of week labels
+- [ ] Search for a user
+- [ ] Integrate NextAuth to compare your Calendar with someone else

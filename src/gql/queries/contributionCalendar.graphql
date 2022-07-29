@@ -1,0 +1,24 @@
+query myContributionCalendar {
+  viewer {
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        months {
+          firstDay
+          name
+          totalWeeks
+          year
+        }
+        weeks {
+          firstDay
+          contributionDays {
+            contributionCount
+            contributionLevel
+            date
+            weekday
+          }
+        }
+      }
+    }
+  }
+}

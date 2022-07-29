@@ -1,0 +1,13 @@
+overwrite: true
+schema:
+  - https://api.github.com/graphql:
+      method: GET
+      headers:
+        Authorization: bearer ${GH_PERSONAL_ACCESS_TOKEN}
+documents: 'src/gql/**/*.graphql'
+generates:
+  src/gql/graphql.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typed-document-node'
