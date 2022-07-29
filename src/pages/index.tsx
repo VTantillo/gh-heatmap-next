@@ -1,6 +1,7 @@
 import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import tw from 'twin.macro'
+
 import HomeBanner from '@sections/home/HomeBanner'
 import {
   HomeBannerContent,
@@ -8,6 +9,7 @@ import {
 } from '@sections/home/HomeBanner/home-banner.content'
 
 const PageWrapper = tw.div`min-h-full bg-ocean grid place-content-center`
+
 
 type HomePageProps = {
   bannerContent: HomeBannerContent
@@ -23,6 +25,7 @@ const HomePage: NextPage<HomePageProps> = ({ bannerContent }) => {
       <PageWrapper>
         <HomeBanner content={bannerContent} />
       </PageWrapper>
+
     </>
   )
 }
